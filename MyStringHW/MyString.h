@@ -8,6 +8,7 @@ public:
 	MyString();//default constructor
 	MyString(const char* s);//constructor with param
 	MyString(int l);//constructor with param
+	MyString(const MyString& obj);
 	~MyString();//destructor
 	void Input();//inputing
 	void Print();//printing

@@ -23,6 +23,12 @@ MyString::MyString(int lenght)//constuctor with param
     counter++;
 }
 
+MyString::MyString(const MyString& obj)//copying constructor
+{
+    this->str = new char[strlen(obj.str) + 1];
+    strcpy_s(this->str, strlen(obj.str), obj.str);
+}
+
 MyString::~MyString()//destructor
 {
     delete[]this->str;

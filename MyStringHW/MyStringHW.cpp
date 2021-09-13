@@ -31,5 +31,7 @@ int main()
 	obj5.MyDelChr('t');
 	obj5.MyStrCmp(obj4);
 	obj5.Print();
+
+	MyString obj6 = obj2;
 }
 
